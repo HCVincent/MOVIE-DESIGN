@@ -12,14 +12,6 @@ body {
     background-color: black;
 }
 
-.sidebar {
-    width: 50px;
-    height: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-}
-
 .navbar-container {
     display: flex;
     align-items: center;
@@ -59,6 +51,7 @@ body {
     flex: 2;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .profile-text-container {
@@ -70,4 +63,38 @@ body {
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-icon {
+    color: gold;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    
 }
